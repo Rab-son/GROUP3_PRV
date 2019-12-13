@@ -1,4 +1,5 @@
 import React from 'react'
+import CreateDialog from '../programrulevariables/dialogs/create.js'
 // MUI imports
 import {AppBar, Toolbar, Typography} from '@material-ui/core'
 
@@ -12,5 +13,6 @@ export default props =>
             <Typography variant="h5" color="inherit" style={{flex: '1.5'}}>
                 PROGRAM RULE VARIABLE 
             </Typography>
+            <CreateDialog/>
         </Toolbar>
     </AppBar>  

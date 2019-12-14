@@ -11,6 +11,7 @@ import Typography from '@material-ui/core/Typography'
 import Add from '@material-ui/icons/Add'
 import Fab from '@material-ui/core/Fab';
 import CloseIcon from '@material-ui/icons/Close';
+import TransferVariable from '../transfervariable.js'
 
 // Dialog box class container
 export default class extends Component {
@@ -59,7 +60,7 @@ export default class extends Component {
             Create A Program Rule Variable
         </DialogTitle>
         <DialogContent fullScreen>
-                
+                <TransferVariable/>
             </DialogContent>  
         </Dialog>
     </Fragment>

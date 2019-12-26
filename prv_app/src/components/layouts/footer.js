@@ -7,13 +7,16 @@ import {Tab} from '@material-ui/core'
 export default props =>
     <Paper>
          <Tabs
-            value = {0}
-            indicatorColor="primary"
-            textColor="primary"
-            centered
-        >   
-            <Tab label= "View All" />
-            <Tab label= "Program 1" />
-            <Tab label= "Program 2" />
+           value = {0}
+           variant="scrollable"
+           scrollButtons="on"
+           indicatorColor="primary"
+           textColor="primary"
+           centered
+       >   
+       
+           <Tab label= "View All" />
+           {programs.map(group =>
+               <Tab label = {group}/>)}
         </Tabs>
     </Paper>

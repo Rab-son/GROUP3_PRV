@@ -1,5 +1,5 @@
 export const programs = [
-    'anc', 'hiv' , 'malaria', 'tb' , 'ebola'
+    'anc', 'hiv' , 'malaria', 'tb' , 'ebola','chicken pox', 'measles', 'hypertension'
 ]
 
 export const description = [

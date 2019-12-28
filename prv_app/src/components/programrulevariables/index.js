@@ -1,12 +1,10 @@
-/*github by Quawaniso Ngwira*/
-
 /*Program rule variable component storage for all program rule variables with their associated programs */
 import React , {Fragment} from 'react'
 // mui imports
 import {Grid, Paper, Typography, List, IconButton} from '@material-ui/core';
 import {ListItem, ListItemText, ListItemSecondaryAction} from '@material-ui/core';
 import { Edit , Delete } from '@material-ui/icons';
-
+import Form from './form';
 
 // description => source type
 
@@ -87,7 +85,7 @@ export default ({
                     {title}
                 </Typography>                
                 {editMode
-                ? <div
+                ? <Form 
                     programrulevariable={programrulevariable}
                     programs={programs}
                     onSubmit={onEditPrograms}

@@ -1,0 +1,56 @@
+{
+    "name": "dhis2-sample-app",
+    "version": "1.0.0",
+    "description": "Sample web app for DHIS2",
+    "main": "index.js",
+    "license": "BSD-3-Clause",
+    "scripts": {
+        "start": "webpack-dev-server --config webpack.dev.js",
+        "build": "webpack -p --config webpack.prod.js",
+        "zip": "cd build && zip -r -X ../sample-app.zip .",
+        "postbuild": "npm run manifest && npm run zip",
+        "manifest": "d2-manifest package.json build/manifest.webapp",
+        "format": "prettier --write \"src/**/*.j{s,sx}\""
+    },
+    "manifest.webapp": {
+        "name": "Sample app",
+        "launch_path": "index.html",
+        "appType": "APP",
+        "icons": {
+            "48": "icon.png"
+        },
+        "developer": {
+            "name": "Kjetil Svalestuen",
+            "company": "University of Oslo"
+        },
+        "default_locale": "en"
+    },
+    "dependencies": {
+        "@material-ui/core": "^4.8.1",
+        "react": "^16.6.0",
+        "react-dom": "^16.6.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.1.2",
+        "@babel/plugin-proposal-class-properties": "^7.1.0",
+        "@babel/polyfill": "^7.0.0",
+        "@babel/preset-env": "^7.1.0",
+        "@babel/preset-react": "^7.0.0",
+        "babel-eslint": "^10.0.1",
+        "babel-loader": "^8.0.4",
+        "babel-plugin-transform-imports": "^1.5.0",
+        "clean-webpack-plugin": "^0.1.19",
+        "copy-webpack-plugin": "^4.6.0",
+        "css-loader": "^1.0.1",
+        "d2-manifest": "^1.0.0",
+        "file-loader": "^2.0.0",
+        "html-webpack-plugin": "^3.2.0",
+        "json-loader": "^0.5.7",
+        "style-loader": "^0.21.0",
+        "uglifyjs-webpack-plugin": "^2.0.1",
+        "webpack": "^4.23.1",
+        "webpack-cli": "^3.1.2",
+        "webpack-dev-server": "^3.1.10",
+        "webpack-merge": "^4.1.4"
+    }
+}

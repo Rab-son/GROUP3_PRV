@@ -1,0 +1,62 @@
+.app {
+    color: black;
+    min-height: 100vh;
+    
+}
+
+.app-logo {
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(86,86,245);
+    min-height: 50px;
+    font-size: 1.5rem;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    margin: 0rem 1rem;
+}
+
+.content {
+    max-width: 800px;
+    width: 100%;
+}
+
+.buttons {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    color:#ffffff ;
+    padding: 1rem 2rem;
+    border-radius: 0.125rem;
+    font-size: 1.25rem;
+    border: 2px solid turquoise;
+    background-color: blue;
+    border-radius: 12px;
+}
+
+button:hover {
+    color: black;
+    cursor: pointer;
+    background-color: turquoise;
+}
+
+button:not(:nth-child(1)) {
+    margin-left: 1rem;
+}

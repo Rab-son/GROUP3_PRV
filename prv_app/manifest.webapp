@@ -1,0 +1,27 @@
+{
+    "version": "0.1",
+    "name": "PROGRAM RULE VARIABLE",
+    "description": "My App is a Packaged App",
+    "launch_path": "/index.html",
+    "appType": "ReactJS WebApp",
+    "icons": {
+        "16": "/img/prv.jpeg",
+    },
+    "developer": {
+        "name": "Rabson Sayenda, Silvia Mambo, Misheck Zuze, Solomon Sato, Quawaninso Ngwira, 
+                 Ellen Kumbani,  Joseph Nkadana",
+        "url": "https://rabsonsayenda.netlify.com/"
+    },
+    "default_locale": "en",
+    "activities": {
+        "dhis": {
+            "href": "*",
+            "namespace": "my-namespace"
+        }
+    },
+    "authorities": [
+         "MY_APP_ADD_NEW",
+         "MY_APP_UPDATE",
+         "MY_APP_DELETE"
+    }
+}

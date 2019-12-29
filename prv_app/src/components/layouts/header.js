@@ -1,6 +1,6 @@
 /* Header component for the application*/
 import React from 'react';
-import CreateDialog from '../programrulevariable/dialog';
+import CreateDialog from '../programrulevariables/dialog';
 // mui imports
 import {AppBar, Toolbar, Typography} from '@material-ui/core'
 // Navigation bar components 

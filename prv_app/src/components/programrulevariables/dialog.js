@@ -1,7 +1,7 @@
 /*This file containes a dialog box which will contain the form that a user will fill in in order
     to create a program rule variable
 */
-import React , {Component, Fragment} from 'react'
+import React , {Component , Fragment} from 'react';
 // MUI imports
 import {Dialog} from '@material-ui/core';
 import {DialogContent, DialogTitle} from '@material-ui/core'
@@ -11,27 +11,25 @@ import Typography from '@material-ui/core/Typography'
 import Add from '@material-ui/icons/Add'
 import Fab from '@material-ui/core/Fab';
 import CloseIcon from '@material-ui/icons/Close';
-import TransferVariable from './transfervariable.js'
+import Form from './form'
 
-// Dialog box class container
 export default class extends Component {
-    // initial close
     state = {
         open: false
     }
-    // triggering open during clicking
+
     handleToggle = () => {
         this.setState({
             open: !this.state.open
         })
     }
-    // Used for submitting form upon creation
+
     handleFormSubmit = programrulevariable => {
         this.handleToggle()
         this.props.onCreate(programrulevariable)
 
     } 
-    
+
     render() {
         const {open} = this.state,
               {programs} = this.props
@@ -60,8 +58,11 @@ export default class extends Component {
             Create A Program Rule Variable
         </DialogTitle>
         <DialogContent fullScreen>
-                <TransferVariable/>
-            </DialogContent>  
+                <Form 
+                    programs={programs}
+                    onSubmit={this.handleFormSubmit}
+                />
+            </DialogContent>
         </Dialog>
     </Fragment>
     }

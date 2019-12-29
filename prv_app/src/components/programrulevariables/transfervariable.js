@@ -20,8 +20,14 @@ const styles = {
 // Generating Program Rule Variables 
 function generatePRVs() {
     const PRVs = [];
-    for (let i = 1; i< 7; i++) {
-        PRVs.push ({ name :'Program Rule Variable ' +i, box: 0, selected: false});
+    for (let i = 1; i< 4; i++) {
+        PRVs.push ({ name :'ART enrollment stage '+ i, box: 0, selected: false});
+
+    }
+
+    for (let j = 1; j< 4; j++) {
+        PRVs.push ({ name :j +'st ANC Visit ', box: 0, selected: false});
+
     }
     return PRVs;
 }

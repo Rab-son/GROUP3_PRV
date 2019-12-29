@@ -2,7 +2,7 @@
 import React, {Component, Fragment} from 'react';
 import Header from './layouts/header'; 
 import Footer from './layouts/footer';
-import ProgramRuleVariable from './programrulevariable';
+import ProgramRuleVariable from './programrulevariables';
 import {programs, programrulevariables } from '../programstore.js';
 import CssBaseline from '@material-ui/core/CssBaseline';
 

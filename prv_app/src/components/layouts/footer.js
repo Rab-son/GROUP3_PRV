@@ -20,7 +20,6 @@ const onIndexSelect = (e, index )=>
             onChange={onIndexSelect}
             indicatorColor="primary"
             textColor="primary"
-            centered = {withWidth !== 'xs'}
             scrollable = {withWidth === 'xs'}
             scrollButtons = "on"
         >   
